@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lfmda
+Version: 1.0
+Author: Wang Liu, liuwa@hnu.edu.cn
+Provides-Extra: all
+Requires-Dist: numpy; extra == "all"
+Requires-Dist: scipy; extra == "all"
+Requires-Dist: opencv-python; extra == "all"
+Requires-Dist: pillow; extra == "all"

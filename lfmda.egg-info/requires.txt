@@ -1,0 +1,6 @@
+
+[all]
+numpy
+scipy
+opencv-python
+pillow

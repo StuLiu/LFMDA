@@ -1,0 +1,3 @@
+ever-beta==0.2.3
+timm
+segment-anything==1.0
