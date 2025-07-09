@@ -88,5 +88,12 @@ python tools/infer_single.py st.lfmda.2potsdam_segformer log/lfmda/SegFormer_MiT
   year={2025},
   doi={10.1109/TIP.2025.3588041},
 }
-
+@INPROCEEDINGS{10642007,
+  author={Liu, Wang and Duan, Puhong and Xie, Zhuojun and Kang, Xudong and Li, Shutao},
+  booktitle={IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium}, 
+  title={Learn From Segment Anything Model: Local Region Homogenizing for Cross-Domain Remote Sensing Image Segmentation}, 
+  year={2024},
+  pages={8351-8354},
+  doi={10.1109/IGARSS53475.2024.10642007}
+}
 ```
