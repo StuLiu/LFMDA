@@ -8,12 +8,11 @@ Puhong Duan, Zhuojun Xie, Xudong Kang, and Shutao Li</h5>
 
 <h5 align="left">This is the official implementation for 
 <a href="https://scholar.google.com/citations?user=LXlWdyQAAAAJ&hl=zh-CN">LFMDA</a>. 
----------------------
 
 <div align=center><img src="asserts/overview.png" width = 1080 height =428></div>
 <p align="center">Fig. 1 An overview of the proposed LFMDA.</p>
 
-
+---------------------
 ## Getting Started
 
 ### Environment:
@@ -51,12 +50,16 @@ Puhong Duan, Zhuojun Xie, Xudong Kang, and Shutao Li</h5>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;reg_dir\
 "
 
+---------------------
+
 ### Evaluate the trained RegDA models.\
 Download the pre-trained [<b>weights</b>](https://pan.baidu.com/s/1iSPb67jnnbaoqjOj23y3Qw?pwd=7muu) and logs.
 #### 1. on Vaihingen (IRRG) -> Potsdam (IRRG) task
 Run evaluating: `python tools/eval.py --config-path st.lfmda.2potsdam_segformer --ckpt-path log/lfmda/SegFormer_MiT-B2/2potsdam/ssl_proto_sam_0.95/Potsdam_stu_best.pth --test 1`
 #### 2. on Potsdam (IRRG) -> Vaihingen (IRRG) task
 Run evaluating: `python tools/eval.py --config-path st.lfmda.2vaihingen_segformer --ckpt-path log/lfmda/SegFormer_MiT-B2/2vaihingen/ssl_proto_sam_0.95/Vaihingen_stu_est.pth --test 1`
+
+---------------------
 
 ### Train the LFMDA (SegFormer_MiT-b2)
 Download [imagenet-pretrained](https://github.com/NVlabs/SegFormer) mit-b2.pth to ./ckpts/backbones/mit/mit_b2.pth
@@ -67,10 +70,14 @@ bash runs/lfmda/2vaihingen_segformer.sh
 bash runs/lfmda/2potsdam_segformer.sh
 ```
 
+---------------------
+
 ### Inference single file
 ```bash 
 python tools/infer_single.py st.lfmda.2potsdam_segformer log/lfmda/SegFormer_MiT-B2/2potsdam/ssl_proto_sam_0.95/Potsdam_stu_best.pth [image-path] --save-dir [save-dir-path]
 ```
+
+---------------------
 
 ### Cite
 ```bash 
@@ -78,7 +85,8 @@ python tools/infer_single.py st.lfmda.2potsdam_segformer log/lfmda/SegFormer_MiT
   author={Liu, Wang and Duan, Puhong and Xie, Zhuojun and Kang, Xudong and Li, Shutao},
   journal={IEEE Transactions on Image Processing}, 
   title={Learning from Vision Foundation Models for Cross-domain Remote Sensing Image Segmentation}, 
-  year={2025}
+  year={2025},
+  doi={10.1109/TIP.2025.3588041},
 }
 
 ```
