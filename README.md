@@ -86,6 +86,8 @@ python tools/infer_single.py st.lfmda.2potsdam_segformer log/lfmda/SegFormer_MiT
   journal={IEEE Transactions on Image Processing}, 
   title={Learning from Vision Foundation Models for Cross-domain Remote Sensing Image Segmentation}, 
   year={2025},
+  volume={34},
+  pages={4553-4565},
   doi={10.1109/TIP.2025.3588041},
 }
 @INPROCEEDINGS{10642007,
